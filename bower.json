@@ -1,0 +1,29 @@
+{
+  "name": "formproject",
+  "authors": [
+    "hao.zhang@neusoft.com <seannell@outlook.com>"
+  ],
+  "description": "ui of formproject",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "form_design",
+    "form",
+    "distribute"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome-animation": "^0.0.8",
+    "components-font-awesome": "^4.5.0"
+  }
+}
