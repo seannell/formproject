@@ -47,82 +47,6 @@
                     <div class="row">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>服务</h5>
-                                <div class="ibox-tools" style="float:left;padding-left:25px;">
-                                    <a class="btn btn-xs btn-primary btn-rounded">常用</a>
-                                    <a class="file-control">教务类</a>
-                                    <a class="file-control">行政类</a>
-                                    <a class="file-control">生活类</a>
-                                    <a class="file-control">全部...</a>
-                                </div>
-                                <div class="ibox-tools">
-                                    <a class="file-control active">按名称排序</a>
-                                    <a class="file-control">按使用频率排序</a>
-                                </div>
-                            </div>
-                            <div class="ibox-content ">
-                                <div class="row text-center">
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-danger dim btn-large-dim btn-outline faa-parent animated-hover faa-parent animated-hover"><i class="fa fa-user-times faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>请假申请</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-warning dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-book faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>图书预约</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-info dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-archive faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>档案预约</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-info dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-internet-explorer faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>网络开通预约</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-default dim btn-large-dim faa-parent animated-hover"><i class="fa fa-credit-card faa-horizontal"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>一卡通补卡</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-info dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-tv faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>上机位申请</h3></div>
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-info dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-map-marker faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>教室预订</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-warning dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-university faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>演讲厅预订</h3></div>
-                                    </div>
-                                    <div class="col-sm-2 col-xs-4 animated fadeIn">
-                                        <button type="button" class="btn btn-info dim btn-large-dim btn-outline faa-parent animated-hover"><i class="fa fa-mortar-board faa-tada"></i>
-                                        </button>
-                                        <div class="text-muted"><h3>研究生包厢申请</h3></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ibox-title">
-                                <div class="ibox-tools">
-                                    <a class="text-primary">more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
                                 <h5>填报</h5>
                                 <div class="ibox-tools" style="float:left;padding-left:25px;">
                                     <a class="btn btn-xs btn-primary btn-rounded">待填报</a>
@@ -136,7 +60,6 @@
                             </div>
                             <div class="ibox-content">
                                 <div class="row m-b-sm m-t-sm wrapper wrapper-content" style="padding-bottom: 0px;padding-top: 0px;">
-
                                     <div class="col-md-4 col-sm-6 col-xs-6">
                                         <div class="input-group">
                                             <input type="text" class="input-sm form-control" placeholder="根据名称查找"> <span class="input-group-btn">
@@ -146,481 +69,16 @@
                                     <div class="col-md-4 col-sm-2 hidden-xs"></div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 text-right">
                                         <a class="btn btn-white btn-sm" type="button"><i class="fa fa-refresh"></i> 刷新</a>
-                                        <a class="btn btn-white btn-sm hidden-xs" type="button" herf="javascript:void(0)" onclick="toggleTaskDisplay(this)"><i class="fa fa-th-large">  切换布局</i></a>
+                                        <a id="toggleLayoutBtn" class="btn btn-white btn-sm hidden-xs" type="button" herf="javascript:void(0)" onclick="toggleTaskDisplay(this)"><i class="fa fa-th-large">  切换布局</i></a>
                                     </div>
                                 </div>
                                 <div class="hr-line-dashed"></div>
-                                <div id="taskDisplayList" style="display:none;" class="forum-item active wrapper wrapper-content animated fadeInRight blog">
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-5">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                                <a href="#"><img src="img/a4.jpg" class="img-circle" alt="member">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-6">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                                <a href="#"><img src="img/a4.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a8.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a5.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a7.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a6.jpg" class="img-circle" alt="member">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-6">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-6">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                                <a href="#"><img src="img/a6.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a4.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a5.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a7.jpg" class="img-circle" alt="member">
-                                                </a>
-                                                <a href="#"><img src="img/a8.jpg" class="img-circle" alt="member">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-6">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                            </div>
+                                <div id="taskDisplayList" class="forum-item active wrapper wrapper-content blog">
 
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-6">
-                                            <a class="forum-item-title" href="#">请填写教师资格申请</a>
-                                            <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    2016年6月31日</div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3">
-                                            <strong>教务处</strong>
-                                            <div class="faa-parent animated-hover"><small>周老师 (+020) 6780 3462</small></div>
-                                        </div>
-                                        <div class="col-sm-3 hidden-xs forum-info">
-                                            <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-1 hidden-xs forum-info">
-                                        <span class="views-number">
-                                            368
-                                        </span>
-                                            <div>
-                                                <small>已提交</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2 col-xs-3 forum-info">
-                                            <span class="views-number ">
-                                                <a class="fa fa-send-o"></a>
-                                                <a class="fa fa-commenting-o"></a>
-                                            </span>
-                                        </div>
-                                    </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="text-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i>
-                                            </button>
-                                            <button class="btn btn-white">1</button>
-                                            <button class="btn btn-white  active">2</button>
-                                            <button class="btn btn-white">3</button>
-                                            <button class="btn btn-white">4</button>
-                                            <button class="btn btn-white">5</button>
-                                            <button class="btn btn-white">6</button>
-                                            <button class="btn btn-white">7</button>
-                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="taskDisplayFlow" class="wrapper wrapper-content  animated fadeInRight blog">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="ibox">
-                                                <div class="ibox-content">
-                                                    <a class="btn-link" href="article.html">
-                                                        <h2>
-                                                            请填写教师资格申请
-                                                        </h2>
-                                                    </a>
-                                                    <div class="small m-b-xs">
-                                                        <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                    </div>
-                                                    <p>
-                                                        请填写教师资格申请
-                                                    </p>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="text-left">
-                                                                <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h5>相关信息：</h5>
-                                                            <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                            <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="small text-right">
-                                                                <h5>状态：</h5>
-                                                                <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                                <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div id="pageNumContainer" class="btn-group">
 
-                                                </div>
-                                            </div>
-                                            <div class="ibox">
-                                                <div class="ibox-content">
-                                                    <a class="btn-link" href="article.html">
-                                                        <h2>
-                                                            请填写教师资格申请
-                                                        </h2>
-                                                    </a>
-                                                    <div class="small m-b-xs">
-                                                        <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                    </div>
-                                                    <p>
-                                                        请填写教师资格申请
-                                                    </p>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="text-left">
-                                                                <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h5>相关信息：</h5>
-                                                            <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                            <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="small text-right">
-                                                                <h5>状态：</h5>
-                                                                <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                                <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="ibox">
-                                                <div class="ibox-content">
-                                                    <a class="btn-link" href="article.html">
-                                                        <h2>
-                                                            请填写教师资格申请
-                                                        </h2>
-                                                    </a>
-                                                    <div class="small m-b-xs">
-                                                        <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                    </div>
-                                                    <p>
-                                                        请填写教师资格申请
-                                                    </p>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="text-left">
-                                                                <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h5>相关信息：</h5>
-                                                            <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                            <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="small text-right">
-                                                                <h5>状态：</h5>
-                                                                <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                                <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="ibox">
-                                                <div class="ibox-content">
-                                                    <a class="btn-link" href="article.html">
-                                                        <h2>
-                                                            请填写教师资格申请
-                                                        </h2>
-                                                    </a>
-                                                    <div class="small m-b-xs">
-                                                        <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                    </div>
-                                                    <p>
-                                                        请填写教师资格申请
-                                                    </p>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="text-left">
-                                                                <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h5>相关信息：</h5>
-                                                            <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                            <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="small text-right">
-                                                                <h5>状态：</h5>
-                                                                <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                                <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="ibox">
-                                                <div class="ibox-content">
-                                                    <a class="btn-link" href="article.html">
-                                                        <h2>
-                                                            请填写教师资格申请
-                                                        </h2>
-                                                    </a>
-                                                    <div class="small m-b-xs">
-                                                        <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                    </div>
-                                                    <p>
-                                                        请填写教师资格申请
-                                                    </p>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <div class="text-left">
-                                                                <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h5>相关信息：</h5>
-                                                            <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                            <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <div class="small text-right">
-                                                                <h5>状态：</h5>
-                                                                <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                                <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div><div class="ibox">
-                                            <div class="ibox-content">
-                                                <a class="btn-link" href="article.html">
-                                                    <h2>
-                                                        请填写教师资格申请
-                                                    </h2>
-                                                </a>
-                                                <div class="small m-b-xs">
-                                                    <strong>周心雨</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  2016年1月1日</span>
-                                                </div>
-                                                <p>
-                                                    请填写教师资格申请
-                                                </p>
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <div class="text-left">
-                                                            <button type="button" class="btn btn-primary btn-xs">提交</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <h5>相关信息：</h5>
-                                                        <button type="button" class="btn btn-white btn-xs">教务处</button>
-                                                        <button type="button" class="btn btn-white btn-xs">周老师 (+020) 6780 3462</button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="small text-right">
-                                                            <h5>状态：</h5>
-                                                            <div><a class="fa fa-send-o">  144 提交</a></div>
-                                                            <div> <a class="fa fa-comments-o">  56 评论</a> </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="hr-line-dashed"></div>
-                                    <div class="text-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i>
-                                            </button>
-                                            <button class="btn btn-white">1</button>
-                                            <button class="btn btn-white  active">2</button>
-                                            <button class="btn btn-white">3</button>
-                                            <button class="btn btn-white">4</button>
-                                            <button class="btn btn-white">5</button>
-                                            <button class="btn btn-white">6</button>
-                                            <button class="btn btn-white">7</button>
-                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i>
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -628,8 +86,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>服务</h5>
+                                <div class="ibox-tools" style="float:left;padding-left:25px;">
+                                    <a class="btn btn-xs btn-primary btn-rounded">常用</a>
+                                    <a class="file-control">教务类</a>
+                                    <a class="file-control">行政类</a>
+                                    <a class="file-control">生活类</a>
+                                    <a class="file-control">全部...</a>
+                                </div>
+                                <div class="ibox-tools">
+                                    <a class="file-control active">按名称排序</a>
+                                    <a class="file-control">按使用频率排序</a>
+                                </div>
+                            </div>
+                            <div class="ibox-content " id="serviceContainer">
+
+                            </div>
+                            <div class="ibox-title">
+                                <div class="ibox-tools">
+                                    <a class="text-primary">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="footer" style="position:fixex;bottom:50px;" >
+            <div class="footer" style="position:fixed;bottom:50px;" >
                 <div class="pull-right">
                     By：<a href="http://www.neusoft.com" target="_blank">Forms from Neusoft Campus</a>
                 </div>
@@ -645,23 +132,269 @@
     <!-- 全局js -->
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js?v=3.4.0"></script>
+
+    <!-- 数据js -->
+    <script src="./index_formproject_data.js"></script>
     <script>
         var toggleTaskDisplay = function(element){
+            debugger;
             if($("i",element).hasClass("fa-th-large")){
                 // 切换到list显示模式
                 $("i",element).removeClass("fa-th-large").addClass("fa-list-ul");
-
-                $("#taskDisplayList").addClass("animated","fadeInRight").show();
-                $("#taskDisplayFlow").removeClass("animated","fadeInRight").hide();
             }else if($("i",element).hasClass("fa-list-ul")){
                 // 切换到流式显示模式
                 $("i",element).removeClass("fa-list-ul").addClass("fa-th-large");
-                $("#taskDisplayFlow").addClass("animated","fadeInRight").show();
-                $("#taskDisplayList").removeClass("animated","fadeInRight").hide();
             }
+
+            // 获取当前显示第几页
+            var pageNumber = $(".active",$("#pageNumContainer")).index();
+            showTaskPage(pageNumber);
+
         }
     </script>
-    <!-- 自定义js -->
+
+    <script>
+
+
+        $(document).ready(function(){
+            drawServiceList();
+            prepareTaskList();
+            createPageButton();
+            showTaskPage(1);
+        });
+        // 绘制服务列表 开始
+        var drawServiceList = function(){
+            var colNum = 6; // 每行显示元素个数
+
+            var rowItem = null;
+            var totalServiceNum = serviceList.result.length;
+            var maxIndexOfRow = 0;
+
+            var service = null;
+            var serviceItem = null;
+
+
+            for(var rowIndex = 0, rowNum = Math.ceil(totalServiceNum/colNum);rowIndex<rowNum;rowIndex++){
+                rowItem = $('<div class="row text-center"></div>');
+                maxIndexOfRow = ((rowIndex+1)*colNum-1);
+                maxIndexOfRow = maxIndexOfRow>totalServiceNum-1?totalServiceNum-1:maxIndexOfRow;
+
+                for(var i=rowIndex*colNum,j=maxIndexOfRow;i<=j;i++){
+                    service = serviceList.result[i];
+                    serviceItem = createServiceElement(service);
+                    rowItem.append(serviceItem);
+                }
+                $("#serviceContainer").append(rowItem);
+            }
+        };
+        // 创建service dom元素
+        var createServiceElement = function(service){
+            var btnStyle = "btn-outline";
+            var btnShake = "faa-tada";
+            if(service.status=="0"){
+                service.color = "default";
+                btnStyle = "";
+                btnShake = "faa-horizontal";
+            }
+            var elementString  = '<div class="col-sm-2 col-xs-4 animated fadeIn" id="'+service.id+'">'
+                  + ' <button type="button" class="btn btn-'+service.color+' dim btn-large-dim '+btnStyle+' faa-parent animated-hover" onclick="JumpTo(\''+service.url+'\')">'
+                  + '<i class="fa '+service.icon+' '+btnShake+'"></i></button>'
+                  + ' <div class="text-muted"><h3>'+service.name+'</h3></div></div>';
+            return $(elementString);
+        };
+
+        var numPerPage = 6;
+        // 绘制待办任务列表 开始
+        var prepareTaskList = function(){
+
+
+            var pageItem = null;
+            var cardItem = null;
+            var totalTaskNum = taskList.result.length;
+            var maxIndexOfRow = 0;
+
+            var task = null;
+            var taskItem = null;
+            var cardItem = null;
+
+            for(var pageIndex = 0, pageNum = Math.ceil(totalTaskNum/numPerPage);pageIndex<pageNum;pageIndex++){
+                maxIndexOfRow = ((pageIndex+1)*numPerPage-1);
+                maxIndexOfRow = maxIndexOfRow>totalTaskNum-1?totalTaskNum-1:maxIndexOfRow;
+
+                // 列表准备
+                pageItem = $('<div class="pageContainer" id="page'+parseInt(pageIndex+1)+'"></div>');
+                for(var i=pageIndex*numPerPage,j=maxIndexOfRow;i<=j;i++){
+                    task = taskList.result[i];
+                    taskItem = createTaskElement(task);
+                    pageItem.append(taskItem);
+                }
+                $("#taskPageContainer").append(pageItem);
+
+                // card准备
+                cardItem = $('<div class="row" id="page'+parseInt(pageIndex+1)+'"></div>');
+                var cardCol1 = $('<div class="col-md-4" id="taskcardcol1"></div>');
+                var cardCol2 = $('<div class="col-md-4" id="taskcardcol2"></div>');
+                var cardCol3 = $('<div class="col-md-4" id="taskcardcol3"></div>');
+
+                // 向cardCol中插入数值
+                for(var i=pageIndex*numPerPage,j=maxIndexOfRow;i<=j;i++){
+                    task = taskList.result[i];
+                    taskItem = createTaskCardElement(task);
+
+                    var rnd = i%3;
+
+                    if(rnd==0){
+                        cardCol1.append(taskItem);
+                    }else if(rnd == 1){
+                        cardCol2.append(taskItem);
+                    }else if(rnd == 2){
+                        cardCol3.append(taskItem);
+                    }
+                }
+
+                $(cardItem).append(cardCol1);
+                $(cardItem).append(cardCol2);
+                $(cardItem).append(cardCol3);
+                $("#taskCardPageContainer").append(cardItem);
+            }
+
+
+        }
+        // 创建任务列表
+        var createTaskElement = function(task){
+            var elementString = '<div class="row" id="'+task.id+'">'
+                +' <div class="col-sm-4 col-xs-5">'
+                +' <a class="forum-item-title" href="'+task.url+'">'+task.name+'</a>'
+                +' <div class="faa-parent animated-hover"><a href="#" class="fa fa-bell faa-shake"></a>    '+task.dualtime+'</div>'
+                +' </div>'
+                +'<div class="col-sm-2 col-xs-3">'
+                +'<strong>'+task.class+'</strong>'
+                +'<div class="faa-parent animated-hover"><small>'+task.contactPerson+' '+task.contactNumber+'</small></div>'
+                +'</div>'
+                +'<div class="col-sm-3 hidden-xs forum-info">'
+//                +' <div class="team-members" style="margin-top: 0px;margin-bottom: 0px;">'
+//                +'<a href="#"><img src="img/a4.jpg" class="img-circle" alt="member"></a>'
+//                +' </div>'
+                +'</div>'
+                +'<div class="col-sm-1 hidden-xs forum-info">'
+                +'<span class="views-number"> '+task.commitNumber
+                +'</span>'
+                +' <div>'
+                +'<small>已提交</small>'
+                +'</div>'
+                +' </div>'
+                +' <div class="col-sm-2 col-xs-3 forum-info">'
+                +'<span class="views-number ">'
+                +'<a class="fa fa-send-o"></a>'
+                +'<a class="fa fa-commenting-o"></a>'
+                +'</span>'
+                +' </div>'
+                +'</div>'
+                +'<div class="hr-line-dashed"></div>';
+
+            return $(elementString);
+        }
+
+        // 创建任务卡片
+        var createTaskCardElement = function(task){
+
+            var elementString = '<div class="ibox">'
+                    +'<div class="ibox-content">'
+                    +'<a class="btn-link" href="'+task.url+'">'
+                    +' <h2>'
+                    + task.name
+                    +' </h2>'
+                    +'</a>'
+                    +' <div class="small m-b-xs">'
+                    +' <strong>'+task.contactPerson+'</strong> <span class="text-muted"><i class="fa fa-clock-o"></i>  '+task.dualtime+'</span>'
+                    +'</div>'
+                    +'  <p>'
+                    +'  '+task.name
+                    +' </p>'
+                    +'  <div class="row">'
+                    +'  <div class="col-sm-6">'
+                    +'   <div class="text-left">'
+                    +'  <button type="button" class="btn btn-primary btn-xs">提交</button>'
+                    +' </div>'
+                    +' </div>'
+                    +' <div class="col-sm-6">'
+                    +' </div>'
+                    +' </div>'
+                    +' <div class="row">'
+                    +' <div class="col-sm-6">'
+                    +' <h5>相关信息：</h5>'
+                    +' <button type="button" class="btn btn-white btn-xs">'+task.class+'</button>'
+                    +'  <button type="button" class="btn btn-white btn-xs">'+task.contactPerson+' '+task.contactNumber+'</button>'
+                    +' </div>'
+                    +'  <div class="col-sm-6">'
+                    +' <div class="small text-right">'
+                    +'<h5>状态：</h5>'
+                    +' <div><a class="fa fa-send-o">  '+task.commitNumber+' 提交</a></div>'
+//                    +'<div> <a class="fa fa-comments-o">  56 评论</a> </div>'
+                    +'</div>'
+                    +' </div>'
+                    +'</div>'
+
+                    +' </div>'
+                    +' </div>';
+
+
+
+            return $(elementString);
+        }
+        // 绘制待办任务列表 结束
+
+        // 绘制翻页按钮
+        var createPageButton = function(){
+            var totalTaskNum =taskList.result.length;
+            var pageNum = Math.ceil(totalTaskNum/numPerPage);
+
+            var btnString = '<button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>';
+            for(var i= 0,j=pageNum;i<j;i++){
+                btnString +='<button id="btnTaskPage'+(parseInt(i)+1)+'" class="btn btn-white btn-task-page" onclick="showTaskPage(\''+(parseInt(i)+1)+'\')">'+(parseInt(i)+1)+'</button>';
+            }
+            btnString += '<button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i></button>';
+            $("#pageNumContainer").append($(btnString));
+
+        };
+
+        var showTaskPage = function(pageNumber){
+            debugger;
+            // 判断当前显示卡片视图还是列表视图
+            var isFlowLayout = $("#toggleLayoutBtn").find("i").hasClass("fa-th-large");
+
+            // 清空内容
+            $(".row",$("#taskDisplayList")).remove();
+            $(".hr-line-dashed",$("#taskDisplayList")).remove();
+
+            // 设置激活页面
+            $(".btn-task-page").removeClass("active");
+            $("#btnTaskPage"+pageNumber,$("#pageNumContainer")).addClass("active");
+
+            // 如果是流式页面，就显示流式页面的内容
+            var taskPageElement = null;
+            if(isFlowLayout){
+                taskPageElement = $("#taskCardPageContainer").find("#page"+pageNumber);
+                $("#taskDisplayList").prepend(taskPageElement.clone(true).addClass("animated fadeIn"));
+            }else{
+                taskPageElement = $("#taskPageContainer").find("#page"+pageNumber);
+                // WARNING:clone is not a good way to append element
+                $("#taskDisplayList").prepend(taskPageElement.children().clone(true).addClass("animated fadeIn"));
+            }
+
+        }
+
+        var JumpTo = function(url){
+            window.location = url;
+        };
+
+        var openWindow = function(url){
+            window.open(url);
+        }
+
+    </script>
+    <div id="taskPageContainer" style="display:none;"></div>
+    <div id="taskCardPageContainer" style="display:none;"></div>
 </body>
 
 </html>
