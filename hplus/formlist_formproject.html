@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>校园填报系统——表单列表</title>
+
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="../bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome-animation/dist/font-awesome-animation.min.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.0.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg top-navigation">
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand"><i class="fa fa-pencil-square-o"></i></a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a aria-expanded="false" role="button" href="#"> 欢迎光临校园填报系统(管理员版)</a>
+                            </li>
+                            <li class="active">
+                                <a aria-expanded="false" role="button" href="#"> 表单</a>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" role="button" href="#"> 指派</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-sign-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>表单列表</h5>
+                                <div class="ibox-tools" style="float:left;padding-left:25px;">
+                                    <a class="file-control btn-primary btn-rounded">最近使用</a>
+                                    <a class="file-control">待发布</a>
+                                    <a class="file-control">已发布</a>
+                                    <a class="file-control">全部...</a>
+                                </div>
+                                <div class="ibox-tools">
+                                    <a class="file-control active">按创建时间排序</a>
+                                    <a class="file-control">按截止时间排序</a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div class="row m-b-sm m-t-sm wrapper wrapper-content" style="padding-bottom: 0px;padding-top: 0px;">
+                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                        <div class="input-group">
+                                            <input type="text" class="input-sm form-control" placeholder="根据名称查找"> <span class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary" type="button"> 搜索</button> </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-2 hidden-xs"></div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 text-right">
+                                        <a class="btn btn-white btn-sm" type="button"><i class="fa fa-refresh"></i> 刷新</a>
+                                        <a class="btn btn-white btn-sm hidden-xs" style="display:none;" type="button" herf="javascript:void(0)" onclick="toggleTaskDisplay(this)"><i class="fa fa-th-large">  切换布局</i></a>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div id="taskDisplayFlow" class="wrapper wrapper-content  animated fadeInRight blog">
+                                    <h3>待发布</h3>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget gray-bg no-padding">
+                                                    <div class="p-m faa-parent animated-hover">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+
+                                                        <h3 class="font-bold">
+                                                            <small class="font-bold">创建时间：2016-01-01</small>
+                                                        </h3>
+
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">发布状态</div>
+                                                            <div class="col-sm-6">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form1">
+                                                                        <label class="onoffswitch-label" for="checkbox_form1">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget gray-bg no-padding">
+                                                    <div class="p-m faa-parent animated-hover">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+
+                                                        <h3 class="font-bold">
+                                                            <small class="font-bold">创建时间：2016-01-01</small>
+                                                        </h3>
+
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">发布状态</div>
+                                                            <div class="col-sm-6">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form2">
+                                                                        <label class="onoffswitch-label" for="checkbox_form2">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget gray-bg no-padding">
+                                                    <div class="p-m faa-parent animated-hover">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+
+                                                        <h3 class="font-bold">
+                                                            <small class="font-bold">创建时间：2016-01-01</small>
+                                                        </h3>
+
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">发布状态</div>
+                                                            <div class="col-sm-6">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form3">
+                                                                        <label class="onoffswitch-label" for="checkbox_form3">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+                                    <h3>已发布</h3>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget lazur-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_1">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_1">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7">大厅</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ibox">
+                                                <div class="widget lazur-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_2">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_2">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7">大厅</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget lazur-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_3">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_3">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7">大厅</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ibox">
+                                                <div class="widget navy-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_4">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_4">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">2016年教师资格申请</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget navy-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>教师资格审核表教师资格审核表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_5">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_5">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">2016年教师资格申请</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ibox">
+                                                <div class="widget lazur-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>上机位申请表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_6">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_6">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7">大厅</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="ibox">
+                                                <div class="widget lazur-bg no-padding">
+                                                    <div class="p-m" style="margin-bottom: 0px;">
+                                                        <h3 class="font-bold" style="display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"> <a>请假申请表</a></h3>
+                                                        <div class="row">
+                                                            <div class="col-sm-2"><a class="fa fa-bell"></a></div>
+                                                            <div><a class="text-right">305</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-m">
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布状态：</div>
+                                                            <div class="col-sm-7">
+                                                                <div class="switch">
+                                                                    <div class="onoffswitch">
+                                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="checkbox_form_7">
+                                                                        <label class="onoffswitch-label" for="checkbox_form_7">
+                                                                            <span class="onoffswitch-inner"></span>
+                                                                            <span class="onoffswitch-switch"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布到：</div>
+                                                            <div class="col-sm-7">大厅</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-5">发布时间：</div>
+                                                            <div class="col-sm-7">2016-01-01</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i>
+                                            </button>
+                                            <button class="btn btn-white">1</button>
+                                            <button class="btn btn-white  active">2</button>
+                                            <button class="btn btn-white">3</button>
+                                            <button class="btn btn-white">4</button>
+                                            <button class="btn btn-white">5</button>
+                                            <button class="btn btn-white">6</button>
+                                            <button class="btn btn-white">7</button>
+                                            <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="bottom:50px;" >
+                <div class="pull-right">
+                    By：<a href="http://www.neusoft.com" target="_blank">Forms from Neusoft Campus</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Neusoft &copy;  2012 - 2016
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+    <!-- 自定义js -->
+    <script src="js/content.min.js?v=1.0.0"></script>
+
+</body>
+
+</html>
